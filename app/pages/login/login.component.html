@@ -1,0 +1,68 @@
+<GridLayout class="light-grey">
+
+  <ScrollView #mainContainer
+      class="main-container">
+
+    <GridLayout #formControls
+        class="form-controls"
+        rows="auto, auto, auto, auto, auto"
+        translateY="50">
+
+      <Image src="res://multiprotexion_eye" 
+          stretch="none" 
+          horizontalAlignment="center"
+          row="0"
+          ></Image>
+
+<!--
+      <TextField #company
+          [hint]="'COMPANY' | translate"
+          returnKeyType="next"
+          (returnPress)="focusUserName()"
+          
+          autocorrect="false"
+          autocapitalizationType="none"
+          row="1"
+          color="black"
+          style="text-align:center;"
+          (propertyChange)="controlEnableBtn()"></TextField>
+
+
+      <TextField #username
+          [hint]="'USER_NAME' | translate"
+          returnKeyType="next"
+          (returnPress)="focusPassword()"
+          
+          autocorrect="false"
+          autocapitalizationType="none"
+          row="2"
+          color="black"
+          style="text-align:center;"
+          (propertyChange)="controlEnableBtn()"></TextField>
+
+
+      <TextField #password
+          [hint]="'PASSWORD' | translate"
+          secure="true"
+          returnKeyType="done"
+          (returnPress)="login()"
+          
+          row="3"
+          style="text-align:center;"
+          (propertyChange)="controlEnableBtn()"></TextField>
+-->
+
+      <Button text="LOGIN"
+          class="backcolor-multiprotexion text-bold-capitalize" 
+          row="4"
+          (tap)="login()"
+
+                ></Button>
+
+      <ActivityIndicator busy="{{ isAccessing }}"> </ActivityIndicator>
+
+    </GridLayout>
+
+  </ScrollView>
+
+</GridLayout>              

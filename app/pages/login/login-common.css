@@ -1,0 +1,44 @@
+/* Hide a bunch of things to setup the initial animations */
+.form-controls, .sign-up-stack {
+  opacity: 0;
+  color: black;
+}
+
+.main-container {
+  visibility: collapse;
+  opacity: 0;
+  margin-left: 30;
+  margin-right: 30;
+  background-color: white;
+}
+
+Image {
+  margin-top: 5;
+  margin-bottom: 10;
+}
+Button {
+  margin-left: 16;
+  margin-right: 16;
+  margin-bottom: 20;
+  margin-top: 20;
+}
+
+TextField {
+  margin-left: 16;
+  margin-right: 16;
+  margin-bottom: 15;
+  height: 50;
+  padding-left: 10;
+  border-width: 2;
+  border-color: black;
+}
+
+.black-text {
+  margin-left: 10;
+  margin-right: 10;
+  color: black;
+}
+
+.light-grey{
+  background-color: #cecece;
+}
