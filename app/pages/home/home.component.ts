@@ -129,7 +129,7 @@ export class HomeComponent extends Observable implements OnInit, AfterViewInit {
     let navActionItem = new ActionItem();
     //private static UIImage _normalImage = new UIImage(MptxString.ImgMenuIcon).ImageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal);
     
-    navActionItem.icon = 'res://ic_menu_white';  // ic_menu_white | multiprotexion_eye
+    navActionItem.icon = 'res://ic_menu_white';  // ic_menu_white | 
 
     if (navActionItem.ios) {
       navActionItem.ios.position = 'left';
