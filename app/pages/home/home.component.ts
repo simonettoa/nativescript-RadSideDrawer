@@ -118,7 +118,7 @@ export class HomeComponent extends Observable implements OnInit, AfterViewInit {
     }
 
     // set the bar and background color
-    this._page.actionBar.backgroundColor = new Color("#D02530");  // multiprotexion color (red)
+    this._page.actionBar.backgroundColor = new Color("#D02530"); 
     this._page.actionBar.color = new Color("white");
 
     //this.drawer.
