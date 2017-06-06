@@ -6,33 +6,36 @@
   "nativescript": {
     "id": "org.nativescript.RadSideDrawer",
     "tns-ios": {
-      "version": "3.0.0-rc.1"
+      "version": "3.0.0"
+    },
+    "tns-android": {
+      "version": "3.0.1"
     }
   },
   "dependencies": {
-    "@angular/common": "4.0.1",
-    "@angular/compiler": "4.0.1",
-    "@angular/core": "4.0.1",
-    "@angular/forms": "4.0.1",
-    "@angular/http": "4.0.1",
-    "@angular/platform-browser": "4.0.1",
-    "@angular/platform-browser-dynamic": "4.0.1",
-    "@angular/router": "4.0.1",
-    "nativescript-angular": "^2.0.0-rc.1",
-    "nativescript-telerik-ui": "rc",
-    "nativescript-theme-core": "~1.0.2",
-    "reflect-metadata": "~0.1.8",
-    "rxjs": "~5.0.1",
-    "tns-core-modules": "^3.0.0-rc.2",
-    "zone.js": "~0.8.5"
+    "@angular/common": "4.1.0",
+    "@angular/compiler": "4.1.0",
+    "@angular/core": "4.1.0",
+    "@angular/forms": "4.1.0",
+    "@angular/http": "4.1.0",
+    "@angular/platform-browser": "4.1.0",
+    "@angular/platform-browser-dynamic": "4.1.0",
+    "@angular/router": "4.1.0",
+    "nativescript-angular": "3.0.0",
+    "nativescript-telerik-ui": "2.0.1",
+    "nativescript-theme-core": "~1.0.4",
+    "reflect-metadata": "~0.1.10",
+    "rxjs": "~5.4.0",
+    "tns-core-modules": "^3.0.1",
+    "zone.js": "~0.8.11"
   },
   "devDependencies": {
-    "babel-traverse": "6.23.1",
-    "babel-types": "6.23.0",
-    "babylon": "6.16.1",
+    "babel-traverse": "6.24.1",
+    "babel-types": "6.24.1",
+    "babylon": "6.17.1",
     "lazy": "1.0.11",
     "nativescript-dev-android-snapshot": "^0.*.*",
-    "nativescript-dev-typescript": "^0.4.2",
-    "typescript": "^2.2.2"
+    "nativescript-dev-typescript": "^0.4.4",
+    "typescript": "^2.3.2"
   }
 }
