@@ -38,9 +38,10 @@ export class LoginComponent implements OnInit, AfterViewInit, OnDestroy {
   isBtnLoginEnabled = false;
   //translateLoc: TranslateService;
   isLoggingIn = true;
-
+/*
   @ViewChild("mainContainer") mainContainer: ElementRef;
   @ViewChild("formControls") formControls: ElementRef;
+*/
   @ViewChild("company") company: ElementRef;
   @ViewChild("username") username: ElementRef;
   @ViewChild("password") password: ElementRef;
@@ -144,6 +145,7 @@ export class LoginComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   toggleDisplay() {
+/*    
     this.isLoggingIn = !this.isLoggingIn;
     this.setTextFieldColors();
     let mainContainer = <View>this.mainContainer.nativeElement;
@@ -151,9 +153,11 @@ export class LoginComponent implements OnInit, AfterViewInit, OnDestroy {
         backgroundColor: this.isLoggingIn ? new Color("white") : new Color("#301217"),
         duration: 200
     });
-  }
+*/
+}
 
   showMainContent() {
+/*
     let mainContainer = <View>this.mainContainer.nativeElement;
     let formControls = <View>this.formControls.nativeElement;
     let animations = [];
@@ -170,6 +174,7 @@ export class LoginComponent implements OnInit, AfterViewInit, OnDestroy {
 
     // Kick off the animation queue
     new Animation(animations, false).play();
+*/    
   }
 
   startBackgroundAnimation(background) {
