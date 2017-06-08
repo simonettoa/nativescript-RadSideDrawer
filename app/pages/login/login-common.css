@@ -1,15 +1,33 @@
 /* Hide a bunch of things to setup the initial animations */
-.form-controls, .sign-up-stack {
-  opacity: 0;
+.form-controls {
   color: black;
+  animation-name: showGridLayout;
+  animation-duration: 1;
+  animation-delay: 1;
+  animation-fill-mode: forwards;
 }
 
+@keyframes showGridLayout{
+  from { opacity: 0; }
+  to { opacity: 1; transform: translate(0, 0); }
+}
+
+
 .main-container {
-  visibility: collapse;
-  opacity: 0;
+  
   margin-left: 30;
   margin-right: 30;
   background-color: white;
+
+  animation-name: showScrollView;
+  animation-duration: 1;
+  animation-delay: 0.5;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showScrollView {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 Image {

@@ -1,11 +1,11 @@
 <GridLayout class="light-grey">
 
-  <ScrollView #mainContainer
+  <ScrollView 
       class="main-container">
 
-    <GridLayout #formControls
+    <GridLayout 
         class="form-controls"
-        rows="auto, auto, auto, auto, auto"
+        rows="auto, auto"
         translateY="50">
 
       <Image src="res://banana" 
@@ -14,7 +14,27 @@
           row="0"
           ></Image>
 
+      <Button text="LOGIN"
+          class="text-bold-capitalize" 
+          row="4"
+          (tap)="login()"
+
+                ></Button>
+
+      <ActivityIndicator busy="{{ isAccessing }}"> </ActivityIndicator>
+
+    </GridLayout>
+
+  </ScrollView>
+
+</GridLayout>              
+
+
+
 <!--
+
+    rows="auto, auto, auto, auto, auto"
+
       <TextField #company
           [hint]="'COMPANY' | translate"
           returnKeyType="next"
@@ -51,18 +71,3 @@
           style="text-align:center;"
           (propertyChange)="controlEnableBtn()"></TextField>
 -->
-
-      <Button text="LOGIN"
-          class="text-bold-capitalize" 
-          row="4"
-          (tap)="login()"
-
-                ></Button>
-
-      <ActivityIndicator busy="{{ isAccessing }}"> </ActivityIndicator>
-
-    </GridLayout>
-
-  </ScrollView>
-
-</GridLayout>              
