@@ -16,3 +16,5 @@ Using the command below it's working, but I do not have the realtime control (co
 $ tns run ios --release --device device_identifier_name
 ```
 
+
+UPDATE: the error is no longer present after the update of the system libs
