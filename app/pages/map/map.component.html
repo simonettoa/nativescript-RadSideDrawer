@@ -1,0 +1,29 @@
+
+<StackLayout> 
+  
+  <ContentView height="500" width="400" backgroundColor="blue" >
+    <MapboxView
+        accessToken="sk.eyJ1IjoibXVsdGlwcm90ZXhpb24iLCJhIjoiY2l4OHZjY2o4MDAybjJ0cGJzNzBjbXYxaCJ9.ofc9cLa8FffvgHejs7EkCg"
+        mapStyle="outdoors"
+        zoomLevel="9.50"
+        showUserLocation="true"
+        (mapReady)="onMapReady($event)"
+        >
+    </MapboxView>
+  </ContentView>
+
+<!--
+        latitude="46.4951665"
+        longitude="11.3541034"
+-->  
+
+<!--
+  <Label text="Hello {{ fullName }}! Click to Show Map" (tap)="showMapOnPage()"></Label>
+  <Button text="TRY GET-LOCATION" (tap)="getLocation()">  </Button>
+  
+  <Label text="TRY WATCH-LOCATION" (tap)="watchLocation()"></Label>
+
+  <Label text="Hello {{ fullName }}"></Label>
+-->
+  
+</StackLayout>

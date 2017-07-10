@@ -7,6 +7,8 @@ import { SettingsComponent } from './pages/settings/settings.component';
 
 import { HomeComponent } from './pages/home/home.component';
 
+import { MapComponent } from './pages/map/map.component';
+
 
 export const APP_ROUTES: Routes = [
     {
@@ -19,7 +21,9 @@ export const APP_ROUTES: Routes = [
         component: HomeComponent,
             children: [
                 {path: "login", component: LoginComponent},
-                {path: 'settings', component: SettingsComponent }
+                {path: 'settings', component: SettingsComponent },
+                {path: 'map', component: MapComponent }
+                
             ]
     },
 
