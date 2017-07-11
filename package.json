@@ -22,7 +22,6 @@
     "@angular/platform-browser-dynamic": "~4.1.0",
     "@angular/router": "~4.1.0",
     "nativescript-angular": "~3.1.0",
-    "nativescript-angular-snapshot": "3.0.0-5.5.372.32",
     "nativescript-geolocation": "^3.0.0",
     "nativescript-mapbox": "^3.0.0",
     "nativescript-telerik-ui": "^3.0.1",
@@ -30,6 +29,7 @@
     "reflect-metadata": "~0.1.10",
     "rxjs": "~5.4.0",
     "tns-core-modules": "^3.1.0",
+    "webpack": "^2.2.0",
     "zone.js": "~0.8.11"
   },
   "devDependencies": {
@@ -44,19 +44,21 @@
     "nativescript-css-loader": "~0.26.0",
     "nativescript-dev-android-snapshot": "^0.*.*",
     "nativescript-dev-typescript": "~0.4.0",
-    "nativescript-dev-webpack": "^0.6.3",
+    "nativescript-dev-webpack": "^0.7.2",
     "raw-loader": "~0.5.1",
     "resolve-url-loader": "~2.0.2",
     "typescript": "~2.3.4",
-    "webpack": "~2.6.1",
+    "webpack": "~3.0.0",
+    "webpack-bundle-analyzer": "^2.8.2",
     "webpack-sources": "~1.0.1"
   },
   "scripts": {
     "ns-bundle": "ns-bundle",
     "publish-ios-bundle": "npm run ns-bundle --ios --publish-app",
-    "start-android-bundle": "npm run ns-bundle --android --run-app",
+    "start-android-bundle": "npm run ns-bundle --android --run-app --snapshot",
     "start-ios-bundle": "npm run ns-bundle --ios --run-app",
-    "build-android-bundle": "npm run ns-bundle --android --build-app",
-    "build-ios-bundle": "npm run ns-bundle --ios --build-app"
+    "build-android-bundle": "npm run ns-bundle --android --build-app --snapshot",
+    "build-ios-bundle": "npm run ns-bundle --ios --build-app",
+    "generate-android-snapshot": "generate-android-snapshot --targetArchs arm,arm64,ia32 --install"
   }
 }
